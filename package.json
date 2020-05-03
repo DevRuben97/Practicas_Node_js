@@ -1,0 +1,20 @@
+{
+  "name": "manejo_archivos",
+  "version": "1.0.0",
+  "description": "Proyecto Manajador de archivos utilizando node js",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "node --require babel-register src\\main.js"
+  },
+  "author": "Ruben A. Batista Santos",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.3",
+    "babel-preset-env": "^1.7.0",
+    "babel-register": "^6.26.0"
+  },
+  "dependencies": {
+    "fs": "0.0.1-security"
+  }
+}
