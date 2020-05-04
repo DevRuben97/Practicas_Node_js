@@ -6,5 +6,7 @@
                 "target": "9.3.0"
             }
         ]
-    ]
+    ],
+    "sourceMaps": "inline",
+    "retainLines": true
 }

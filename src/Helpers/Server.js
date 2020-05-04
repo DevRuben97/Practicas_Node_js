@@ -1,9 +1,13 @@
 import http from 'http';
 
 import fs from 'fs';
+
+import {Connection} from '../Persistence/dbConnection';
+
 const file=  '././src/Views/index.html'
 
 
+//Crear un servidor:
 export  function createServer(onError){
     const server= http.createServer((request, response)=> {
         response.writeHead(200, {'Content-Type': 'text/html; chartset=UTF-8'})
@@ -24,6 +28,9 @@ export  function createServer(onError){
         }
     
         console.log('Servidor Iniciado correctamente')
+        //Initialize the databse:
+        Connection.sync();
+
     })
 
     server.on('error',onError)
